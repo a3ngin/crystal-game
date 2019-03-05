@@ -17,19 +17,31 @@ $(document).ready(function () {
     $("#losses-text").text(losses);
     $("#score-text").text(userscore);
 
+    $("#pink")
+    $("#green")
+    $("#blue")
+    $("#yellow")
 
+    var crystalOne = Math.floor(Math.random() * 12 + 1);
+    var crystalTwo = Math.floor(Math.random() * 12 + 1);
+    var crystalThree = Math.floor(Math.random() * 12 +1);
+    var crystalFour = Math.floor(Math.random() * 12 +1);
 
+    $("#blue").on("click", function() {
+    console.log(crystalOne);
+    
+    });
 
-    var crystalOne = 
-    Math.floor(Math.random() * 12 + 1);
+    $("#green").on("click", function() {
+    console.log(crystalTwo);
+    });
 
-    var crystalTwo = 
-    Math.floor(Math.random() * 12 + 1);
+    $("#pink").on("click", function() {
+    console.log(crystalThree);
+    });
 
-    var crystalThree = 
-    Math.floor(Math.random() * 12 +1);
-
-    var crystalFour = 
-    Math.floor(Math.random() * 12 +1);
+    $("#yellow").on("click", function() {
+    console.log(crystalFour);
+    });
 
 });
