@@ -44,18 +44,51 @@ $(document).ready(function () {
     console.log(crystalOne);
     userscore = crystalOne + userscore;
     $("#score-text").text(userscore);
+
+    if(userscore === randnum) {
+        wins++;
+        $("#wins-text").text(wins);
+        reset();
+    }
+    else if(userscore > randnum) {
+        losses++;
+        $("#losses-text").text(losses);
+        reset();
+    }
     });
 
     $("#green").on("click", function() {
     console.log(crystalTwo);
     userscore = crystalTwo + userscore;
     $("#score-text").text(userscore);
+
+    if(userscore === randnum) {
+        wins++;
+        $("#wins-text").text(wins);
+        reset();
+    }
+    else if(userscore > randnum) {
+        losses++;
+        $("#losses-text").text(losses);
+        reset();
+    }
     });
 
     $("#pink").on("click", function() {
     console.log(crystalThree);
     userscore = crystalThree + userscore;
     $("#score-text").text(userscore);
+
+    if(userscore === randnum) {
+        wins++;
+        $("#wins-text").text(wins);
+        reset();
+    }
+    else if(userscore > randnum) {
+        losses++;
+        $("#losses-text").text(losses);
+        reset();
+    }
     });
 
     $("#yellow").on("click", function() {
